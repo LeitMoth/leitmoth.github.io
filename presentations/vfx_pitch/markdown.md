@@ -1,4 +1,4 @@
-# VFX Experience
+# The VFX
 of Colin Phillips
 
 
@@ -137,7 +137,7 @@ of Colin Phillips
 
 ### DISCLAIMER
 Some of those were old projects, I am always improving and could do them better now.
-Also I am not limited to the stuff show, these are just examples.
+Also I am not limited to the stuff shown, these are just examples.
 
 I made this in a day or two and it just has a lot of random stuff I could find quickly across my drives.
 
