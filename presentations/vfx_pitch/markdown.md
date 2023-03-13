@@ -148,7 +148,7 @@ I made this in a day or two and it just has a lot of random stuff I could find q
 - Ask me how to approach a VFX shot
 - Ask me about me working on your VFX shot
 
-I know a lot of a whole lot of tricks, many more than shown here.
+I know a whole lot of tricks, many more than shown here.
 And if I don't know, there is a good chance I can figure it out.
 
 
