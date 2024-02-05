@@ -6,27 +6,9 @@ of Colin Phillips
 ## VFX Over the Years
 
 
-### 3D Tracking & Compositing (2022)
+### My First Ever Shot (2017)
 <video controls loop=true>
-  <source src="media/tv_compare.mp4">
-</video>
-
-
-### Green Screen & CGI (2020)
-<video controls loop=true>
-  <source src="media/carbon_earth.mp4">
-</video>
-
-
-### Compositing: Masking (2018)
-<video controls loop=true>
-  <source src="media/tree_portal.mp4">
-</video>
-
-
-### Compositing: Rotoscoping (2017)
-<video controls loop=true>
-  <source src="media/cabinet.mp4">
+  <source src="media/laser.mp4">
 </video>
 
 
@@ -55,9 +37,65 @@ of Colin Phillips
 </div>
 
 
-### My First Ever Shot (2017)
+### Compositing: Rotoscoping (2017)
 <video controls loop=true>
-  <source src="media/laser.mp4">
+  <source src="media/cabinet.mp4">
+</video>
+
+
+### Compositing: Masking (2018)
+<video controls loop=true>
+  <source src="media/tree_portal.mp4">
+</video>
+
+
+### Old Magic, Proof of Concept (20XX)
+<div class="stretch" style="display:flex; flex-wrap: wrap">
+  <div style="flex: 50%">
+    <video controls loop=true>
+      <source src="media/magic_circle.mp4">
+    </video>
+  </div>
+  <div style="flex: 50%">
+    <video controls loop=true>
+      <source src="media/magic_circle_wall.mp4">
+    </video>
+  </div>
+  <div style="flex: 50%">
+    <video controls loop=true>
+      <source src="media/amdusias.mp4">
+    </video>
+  </div>
+</div>
+
+
+### Green Screen & CGI (2020)
+<video controls loop=true>
+  <source src="media/carbon_earth.mp4">
+</video>
+
+
+### 3D Tracking & Compositing (2022)
+<video controls loop=true>
+  <source src="media/tv_compare.mp4">
+</video>
+
+
+### Green Screen Proof of Concept (2023)
+<video controls loop=true>
+  <source src="media/jerma.mp4">
+</video>
+
+
+### CGI Character Proof of Concept (2023)
+<video controls loop=true>
+  <source src="media/ghosts.mp4">
+</video>
+
+
+### Set Extension Proof of Concept (2024)
+<video controls loop=true>
+  <source src="media/add_bricks.mp4">
 </video>
 
 
@@ -65,8 +103,37 @@ of Colin Phillips
 # Assorted CGI
 
 
-
 <img class="stretch" src="media/winding_building.png">
+
+
+<img class="stretch" src="media/island_rocks.png">
+
+
+<img class="stretch" src="media/the_cave.png">
+
+
+<img class="stretch" src="media/shatter.png">
+
+
+<img class="stretch" src="media/hall.png">
+
+
+<img class="stretch" src="media/hockey1.png">
+
+
+<img class="stretch" src="media/hockey2.png">
+
+
+<img class="stretch" src="media/ice_painting.png">
+
+
+<img class="stretch" src="media/ice_cavey.png">
+
+
+<img class="stretch" src="media/ice_planet.png">
+
+
+<img class="stretch" src="media/rusty.png">
 
 
 
@@ -93,7 +160,7 @@ of Colin Phillips
 
 
 
-## Nebulae (Space Clouds)
+## Volumetrics Demos
 
 
 <video controls loop=true>
@@ -107,39 +174,11 @@ of Colin Phillips
 
 
 
-## Magic Sigils 
-<div class="stretch" style="display:flex; flex-wrap: wrap">
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/magic_circle.mp4">
-    </video>
-  </div>
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/magic_circle_wall.mp4">
-    </video>
-  </div>
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/amdusias.mp4">
-    </video>
-  </div>
-</div>
-
-
-
-## Whatever This Is
-<video controls loop=true>
-  <source src="media/fire_eye.mp4">
-</video>
-
-
-
 ### DISCLAIMER
 Some of those were old projects, I am always improving and could do them better now.
 Also I am not limited to the stuff shown, these are just examples.
 
-I made this in a day or two and it just has a lot of random stuff I could find quickly across my drives.
+This presentation was thrown together quickly with what I had around.
 
 
 
