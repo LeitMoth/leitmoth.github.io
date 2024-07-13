@@ -13,28 +13,12 @@ of Colin Phillips
 
 
 ### Old Scraps (2017)
-<div class="stretch" style="display:flex; flex-wrap: wrap">
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/wall_cube.mp4">
-    </video>
-  </div>
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/forest_cube.mp4">
-    </video>
-  </div>
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/red_fire.mp4">
-    </video>
-  </div>
-  <div style="flex: 50%">
-    <video controls loop=true>
-      <source src="media/saber_fixed_aspect.mp4">
-    </video>
-  </div>
-</div>
+<video controls loop=true>
+  <source src="media/red_fire.mp4">
+</video>
+<video controls loop=true>
+  <source src="media/forest_cube.mp4">
+</video>
 
 
 ### Compositing: Rotoscoping (2017)
@@ -96,6 +80,12 @@ of Colin Phillips
 ### Set Extension Proof of Concept (2024)
 <video controls loop=true>
   <source src="media/add_bricks.mp4">
+</video>
+
+
+### Set Extension Proof of Concept, Unlit (2024)
+<video controls loop=true>
+  <source src="media/buildings.mp4">
 </video>
 
 
@@ -176,23 +166,20 @@ of Colin Phillips
 
 ### DISCLAIMER
 Some of those were old projects, I am always improving and could do them better now.
-Also I am not limited to the stuff shown, these are just examples.
+Also, I am not limited to the stuff shown, these are just examples.
 
 This presentation was thrown together quickly with what I had around.
 
 
 
-### In Closing
-- Ask me if a VFX shot is even possible
-- Ask me how to approach a VFX shot
-- Ask me about me working on your VFX shot
-
-I know a whole lot of tricks, many more than shown here.
-And if I don't know, there is a good chance I can figure it out.
-
-
 ### Bonus
-I have the firm belief that creativity should be as free as it possibly can, so everything I do, I do in free and open source software.
+I have the firm belief that creativity should be as free as it possibly can, so everything I do, I try to do in free and open source software.
 Aside from paying for the physical computer, there is no money barrier between what I can do, and what anyone can do.
 
 ![](media/foss_progs.png)
+
+
+
+### Fin
+This presentation was originally created as a pitch to my local film club.
+It is not a bad portfolio though, so I am keeping it on my website.
