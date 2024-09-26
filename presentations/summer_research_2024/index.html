@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=devicie"> -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+		<title>Removing Undefined Functions from Disco</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized2.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/solarized.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Removing Undefined Functions from Disco</h1>
+					<p>Colin Phillips</p>
+				</section>
+				<section>
+					<h2>Disco</h2>
+					<ul>
+						<li>A programming language</li>
+						<li>Made for teaching discrete math</li>
+						<li>Mathematical syntax</li>
+						<li>Functional</li>
+					</ul>
+				</section>
+				<!-- Nothing -->
+				<section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers="1-1|3-3|4-5">
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs shell" data-trim>
+							Disco> :load my_function.disco
+							Loaded.
+						</code></pre>
+					</section>
+					<!-- Example where it works -->
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers="1-5|7-7">
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+
+							myFunction 0
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+
+							myFunction 0
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs shell" data-trim>
+							Disco> :load my_function.disco
+							17
+							Loaded.
+						</code></pre>
+					</section>
+					<!-- Example where it breaks -->
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers="1-8|9-9">
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+
+							myFunction 0
+
+							myFunction 5
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+
+							myFunction 0
+
+							myFunction 5
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs shell" data-trim>
+							Disco> :load my_function.disco
+							17
+							Error: value did not match any of the branches in a case expression.
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+
+							myFunction 0
+							-- => 17
+
+
+							myFunction 5
+							-- => Error!
+
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers="1-10|6-6|1-10">
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+							myFunction x = -100*x
+
+							myFunction 0
+
+							myFunction 5
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<pre data-id="myfunc"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+							myFunction x = -100*x
+
+							myFunction 0
+
+							myFunction 5
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs shell" data-trim>
+							Disco> :load my_function.disco
+							17
+							-500
+							Loaded.
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<p data-id="ptext">
+							The code ran fine the first two times!<br>
+							Partial functions cause crashes <em>in the future</em>.<br>
+						</p>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Partial Functions</h2>
+						<p>
+							And functions can get a <em>lot</em> more complicated...
+						</p>
+						<pre data-id><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+
+							type Maybe(a) = Unit + a
+
+							contrivedEx : (Maybe(b) * Int) -> List(b) -> Int
+							contrivedEx (left(unit), 0) [] = 0
+							contrivedEx (right(_), n) l = n * (length l)
+
+							-- What inputs am I missing here?
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h2><em>There's got to be a better way!</em></h2>
+					<p>
+						<em>And now there is!</em><br>
+						This is exactly what I have been working on.
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>The Paper</h2>
+						<p>
+							Haskell has this figured out!<br>
+							Their method is in the <em>Lower Your Guards</em> paper.
+						</p>
+					</section>
+					<section>
+						<img src="images/lyg1.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>A Simple Example</h2>
+						<ul>
+							<li>Build a <em>guard tree</em></li>
+							<li>Use the guard tree to generate a <em>refinement type</em></li>
+							<li>Simplify to get a <em>normalized refinement type</em></li>
+							<li>Use that generate 3 examples from the <em>uncovered set</em></li>
+						</ul>
+					</section>
+					<section>
+						<pre><code style="white-space: pre-wrap;" class="hljs txt" data-trim>
+							myFunction 0 = 17
+							myFunction 1 = 27
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs txt" data-trim>
+							-----+-----0-----*
+							 	   |
+							 	   +-----1-----*
+						</code></pre>
+						<style>
+							.katex { font-size: 1em; }
+						</style>
+						\[
+						(M(0)\land F) \lor (\neg M(0) \land ((M(1)\land F) \lor (\neg M(1)\land T))) \\
+						F \lor (\neg M(0) \land (F \lor (\neg M(1)\land T))) \\
+						\neg M(0) \land (\neg M(1)\land T) \\
+						\neg M(0) \land \neg M(1)
+						\]
+					</section>
+					<section>
+						\[
+						\neg M(0) \land \neg M(1)
+						\]
+						<pre><code style="white-space: pre-wrap;" class="hljs txt" data-trim>
+							Integers = [0,1,-1,2,-2,3,-3...]
+
+							Remove 0 and 1, because they are not in the uncovered set
+
+							[-1,2,-2,3,-3...]
+
+							Take first 3: [-1,2,-2]
+
+							So we haven't covered the cases:
+							myFunction (-1) = ...
+							myFunction 2 = ...
+							myFunction (-2) = ...
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Disco Does This For You!</h2>
+						<pre data-id="myfunc2"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Disco Does This For You!</h2>
+						<pre data-id="myfunc2"><code style="white-space: pre-wrap;" class="hljs haskell" data-trim data-line-numbers>
+							-- my_function.disco
+
+							myFunction : Int -> Int
+							myFunction 0 = 17
+							myFunction 1 = 27
+						</code></pre>
+						<pre><code style="white-space: pre-wrap;" class="hljs shell" data-trim>
+							Disco> :load my_function.disco
+							Loading my_function.disco...
+							Warning: You haven't covered these cases:
+							myFunction (-1) = ...
+							myFunction 2 = ...
+							myFunction (-2) = ...
+							Loaded.
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h1>Removing Undefined Functions from Disco</h1>
+					<p>Colin Phillips</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
