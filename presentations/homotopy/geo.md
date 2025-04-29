@@ -97,7 +97,7 @@ This is a path because it is continuous.
 Furthermore, this is a loop, because $f(0) = f(1)$
     </div>
     <div style="flex: 55%">
-        <img src="/dist/img/loop.png"></img>
+        <img src="dist/img/loop.png"></img>
     </div>
 </div>
 
@@ -131,7 +131,7 @@ $$H_t(x) := H(t,x)$$
     </div>
     <div style="width: 4em"></div>
     <div style="flex: 150%">
-        <img src="/dist/img/homotopy1.svg"></img>
+        <img src="dist/img/homotopy1.svg"></img>
     </div>
 </div>
 
@@ -222,7 +222,7 @@ both preserve continuity, so $H$ is continuous because $f$ and $g$ are.
 
 
 <div style="height: 600px">
-<img src="/dist/img/nohomotopy.svg"></img>
+<img src="dist/img/nohomotopy.svg"></img>
 </div>
 
 
